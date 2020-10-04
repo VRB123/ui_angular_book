@@ -1,0 +1,35 @@
+table{
+    width:500px;
+}
+table th{
+    cursor: pointer;
+}
+table td,th{
+    text-align: center;
+    border:1px solid black;
+}
+.sort-by-asc
+{
+    left: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    margin: 4px 4px 0 3px;
+    background: transparent;
+    border-bottom: solid 7px #F80;
+    border-top-width: 0;
+}
+
+.sort-by-desc
+{
+    left: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    margin: 4px 4px 0 3px;
+    background: transparent;
+    border-top: solid 7px #F80;
+    border-bottom-width: 0;
+}

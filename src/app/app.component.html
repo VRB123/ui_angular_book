@@ -1,0 +1,31 @@
+<h1>List of Books</h1>
+
+<div  >
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th (click)="sortBookList('book_title')">Book Title
+            <i class="sort-by-desc" *ngIf="fieldSort.book_title ==='desc'" ></i>
+            <i class="sort-by-asc" *ngIf="fieldSort.book_title ==='asc'"></i>
+          </th>
+          <th (click)="sortBookList('author')">Author
+            <i class="sort-by-desc" *ngIf="fieldSort.author ==='desc'"></i>
+            <i class="sort-by-asc" *ngIf="fieldSort.author === 'asc'"></i>
+          </th>
+          <th (click)="sortBookList('year_published')">Year Published
+            <i class="sort-by-desc" *ngIf="fieldSort.year_published === 'desc'"></i>
+            <i class="sort-by-asc" *ngIf="fieldSort.year_published === 'asc'"></i>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr  *ngFor="let o of list_Of_Books">
+          <td>{{o.book_title}}</td>
+          <td>{{o.author}}</td>
+          <td>{{o.year_published}}</td>
+        </tr>
+      </tbody>
+
+    </table>
+</div>
